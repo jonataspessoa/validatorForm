@@ -1,0 +1,46 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.screen {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.left-side {
+	width: 1000px;
+	height: 100vh;
+	background-color:#ccc;
+}
+
+.right-side {
+	flex: 1;
+	align-items: center;
+	padding: 50px;
+}
+
+.right-side h2 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 50px;
+}
+
+.right-side label {
+	font-size: 20px;
+}
+
+.right-side input {
+	padding: 3px;
+	width: 250px;
+	margin-bottom: 10px;
+}
+
+.send {
+	margin-top:10px;
+	padding: 5px;
+	height: 25px;
+	font-size: 17px;
+}
