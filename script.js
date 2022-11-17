@@ -2,7 +2,7 @@ let Validator = {
 	monitorSubmit:(e)=> {
 		e.preventDefault();
 
-	},
+	}
 };	
 
 

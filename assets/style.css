@@ -1,46 +1,111 @@
 * {
 	margin: 0;
 	padding: 0;
+	font-family: Ubuntu Mono;
 }
 
 .screen {
 	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+.bg--image img {
+	width: 100vw;
+	max-height:calc(100vh - 3px);
+}
+
+.form--datas {
+	height: 350px;
+	width: 270px;
+	border: 2px solid #000;
+	margin: 100px;
+	padding: 10px;
+	position: fixed;
+	box-shadow: 2px 2px 2px 3px #111;
+	
+}
+
+.form--datas h2 {
+	font-weight: bold;
+	font-size: 32px;
+	padding: 10px;
+	margin-left: 40px;
+	text-shadow: 0px 2px 2px #551155;
+}
+.input-area {
+	display: flex;
 	justify-content: space-between;
-	align-items: center;
+	justify-items: center;
+	border: 2px solid #000;
+	border-radius: 10px;
+	padding: 5px;
 }
 
-.left-side {
-	width: 1000px;
-	height: 100vh;
-	background-color:#ccc;
+.datas::placeholder {
+	color:#080f2b;
+	font-weight: 400;
+}
+.input-area img {
+	width: 25px;
 }
 
-.right-side {
-	flex: 1;
-	align-items: center;
-	padding: 50px;
+.form--datas form {
+	margin-top: 35px;
 }
 
-.right-side h2 {
+.form--datas input.datas {
+	width: 230px;
+	height: 25px;
+	font-size: 18px;
+	padding: 0px;
+	margin-left: 5px;
+	background: transparent;
+	border: none;
+	outline: none;
+	font-weight: bold;
+}
+
+form label {
+	font-size: 25px;
+	text-shadow: 0px 1px 0px #551155;
+}
+
+.send--button {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin-bottom: 30px;
-}
-
-.right-side label {
-	font-size: 20px;
-}
-
-.right-side input {
-	padding: 3px;
-	width: 250px;
-	margin-bottom: 10px;
-}
-
-.send {
-	margin-top:10px;
+	border: 2px solid #000;
+	border-radius: 10px;
 	padding: 5px;
-	height: 25px;
-	font-size: 17px;
+}
+
+.send--button input {
+	font-size: 20px;
+	background-color: transparent;
+	border: none;
+	font-weight: bold;
+	text-transform: uppercase;
+	outline: none;
+	cursor: pointer;
+}
+.send--button img {
+	width: 25px;
+	display:none;
+}
+
+
+.send--button input:hover {
+	font-size: 20px;
+	font-weight: bold;
+	text-shadow: 0px 1px 1px #441144;
+	transition: all 0.2s linear;
+}
+
+.send--button:hover {
+	border: 3px solid #000;
+	padding: 6px;
+	transition: all 0.2s linear;
+
 }

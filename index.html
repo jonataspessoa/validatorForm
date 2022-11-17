@@ -5,35 +5,44 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Validador de Formulário</title>
 	<link rel="stylesheet" type="text/css" href="assets/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap" rel="stylesheet">
 
 </head>
 <body>
 
 	<div class="screen">
-		<div class="left-side">
-			...
+		<div class="styleblack">
+		<div class="bg--image">
+			<img src="assets/images/backimage.jpg">
 		</div>
-
-		<div class="right-side">
+		</div>
+		<div class="form--datas">
 			<h2>CADASTRE-SE</h2>
 			<form method="POST" action="cadastro.php" class="validator">
 				<label>
-					Nome:<br/>
-					<input type="name" name="name">
+					<!--User:<br/>-->
+				<div class="input-area">
+					<img src="assets/images/userViking.png">
+					<input class="datas" type="name" name="name" autocomplete="off" placeholder="Usuário">
+				</div>
 				</label><br/>
-
 				<label>
-					E-mail:<br/>
-					<input type="name" name="email">
+				<div class="input-area">
+					<img src="assets/images/mensagemViking.png">
+					<input class="datas" type="name" name="email" autocomplete="off" placeholder="E-mail">
+				</div>
 				</label><br/>
-
 				<label>
-					Senha:<br/>
-					<input type="password" name="password">
+				<div class="input-area">
+					<img src="assets/images/passwordViking.png">
+					<input class="datas" type="password" name="password"placeholder="Senha">
+				</div>
 				</label><br/>
-
 				<label class="send">
-					<input type="submit" value="Cadastrar">
+					<div class="send--button">
+						<input type="submit" value="Cadastrar">
+						<img src="assets/images/buzinaViking.png">
+					</div>
 				</label>
 			</form>
 		</div>
