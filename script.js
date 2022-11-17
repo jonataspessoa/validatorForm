@@ -22,7 +22,6 @@ let Validator = {
 			let txt = html;
 
 			form.querySelector('.send--button').innerHTML = txt;
-		
 		}
 
 	},
@@ -60,6 +59,7 @@ let Validator = {
 	   }
 	   return true;
 	},
+
 	showError:(input, error)=> {
 		
 		let errorElement = document.createElement('div');
@@ -68,6 +68,7 @@ let Validator = {
 		input.closest('.input-area').parentElement.insertBefore(errorElement, input.ElementSibling);
 		
 	},
+
 	removeError:()=> {
 		let input = form.querySelectorAll('input');
 
@@ -76,7 +77,6 @@ let Validator = {
 		}
 
 		let errorElement = document.querySelectorAll('.error');
-
 		for (let i=0;i<errorElement.length;i++){
 			errorElement[i].remove();
 		}
