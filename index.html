@@ -16,36 +16,35 @@
 			<img src="assets/images/backimage.jpg">
 		</div>
 		</div>
-		<div class="form--datas">
+		<main class="form--datas">
 			<h2>CADASTRE-SE</h2>
 			<form method="POST" action="cadastro.php" class="validator">
 				<label>
 					<!--User:<br/>-->
 				<div class="input-area">
 					<img src="assets/images/userViking.png">
-					<input class="datas" type="name" name="name" autocomplete="off" placeholder="Usuário">
+					<input class="datas" type="name" name="name" autocomplete="off" placeholder="Usuário" input-rules="required|min=4">
 				</div>
 				</label><br/>
 				<label>
 				<div class="input-area">
 					<img src="assets/images/mensagemViking.png">
-					<input class="datas" type="name" name="email" autocomplete="off" placeholder="E-mail">
+					<input class="datas" type="name" name="email" autocomplete="off" placeholder="E-mail" input-rules="required|email">
 				</div>
 				</label><br/>
 				<label>
 				<div class="input-area">
 					<img src="assets/images/passwordViking.png">
-					<input class="datas" type="password" name="password"placeholder="Senha">
+					<input class="datas" type="password" name="password"placeholder="Senha" input-rules="required|min=6">
 				</div>
 				</label><br/>
 				<label class="send">
 					<div class="send--button">
 						<input type="submit" value="Cadastrar">
-						<img src="assets/images/buzinaViking.png">
 					</div>
 				</label>
 			</form>
-		</div>
+		</main>
 	</div>
 
 
